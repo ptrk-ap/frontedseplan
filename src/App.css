@@ -1,0 +1,101 @@
+.dashboard-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #280b52;
+}
+
+.chart-row {
+  display: flex;
+  flex: 1; /* Ocupa 50% da tela */
+  gap: 16px;
+  padding: 16px;
+}
+.faixa {
+  margin: 70px auto -50px;
+  height: auto; /* Ajuste para altura dinâmica */
+  width: 100vw;
+  background-color: #060836;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.poder {
+  flex: 1 1 200px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  min-width: 200px;
+}
+.poder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+.total {
+  background-color:red /* Azul */
+}
+.receita {
+  background-color: green ; /* Azul */
+}
+
+.executivo {
+  background-color: #007bff; /* Azul */
+}
+
+.legislativo {
+  background-color: #28a745; /* Verde */
+}
+
+.judiciario {
+  background-color: #d6dc35; /* Vermelho */
+}
+.MP {
+  background-color: #09a9a3; /* Vermelho */
+}
+
+.donut-chart-container {
+  flex: 1;
+  min-height: 400px; /* Altura mínima para gráficos */
+  background-color: #060836;
+  border-radius: 10px;
+  margin-top: 40px;
+ 
+  
+}
+.bar-chart-container {
+  flex: 1;
+  min-height: 400px; /* Altura mínima para gráficos */
+  background-color: #060836;
+  border-radius: 10px;
+  margin-top: 40px;
+  padding-left: 10px;
+  
+  
+}
+
+.table-container {
+  flex: 1; /* Ocupa os 50% restantes */
+  padding: 0 16px 16px 16px;
+  overflow: hidden;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .chart-row {
+    flex-direction: column;
+  }
+   .faixa {
+    flex-direction: column;
+  }
+}
