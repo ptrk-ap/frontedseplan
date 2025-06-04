@@ -15,7 +15,7 @@ function AppRoutes() {
 
   return (
     <Routes>
-      <Route path="/DespesasPoder" element={<DespesasPoder />} />
+      <Route path="/" element={<DespesasPoder />} />
     </Routes>
   )
 }
